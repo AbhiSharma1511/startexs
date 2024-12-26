@@ -5,6 +5,7 @@ import Link from 'next/link';
 import BusinessSection from '@/components/BusinessSolution';
 import StorySuccessSection from '@/components/StorySuccessSection';
 import WorkSection from '@/components/WorkSection';
+import BookServiceNowSection from '@/components/BookServiceNowSection';
 // import Service from '@/components/Service';
 // import LatestWork from '@/components/LatestWork';
 //import HeroText from '@/components/HeroText';
@@ -39,6 +40,7 @@ const Home = () => {
       <BusinessSection/>
       <StorySuccessSection/>
       <WorkSection/>
+      <BookServiceNowSection/>
     </div>
   )
 }

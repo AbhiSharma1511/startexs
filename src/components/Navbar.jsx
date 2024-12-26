@@ -17,11 +17,12 @@ const Navbar = () => {
         </div>
         <div className='flex px-3 py-1 text-white'>
           <Link href='/' className='mx-5'>Home</Link>
-          <Link href='/about' className='mx-5'>About Us</Link>
-          <Link href='/contact-us' className='mx-5'>Contact Us</Link>
+          <Link href='/about-us' className='mx-5'>About Us</Link>
+          <Link href='/contact-us' className='mx-5'>Work</Link>
+          <Link href='/contact-us' className='mx-5'>Service</Link>
         </div>
         <div className='bg-blue-600 rounded-lg'>
-          <h3 className='px-3 py-1 text-white'><Link href='/book-call'>Book a Call</Link></h3>
+          <h3 className='px-3 py-1 text-white'><Link href='/book-call'>Contact Us</Link></h3>
         </div>
       </div>
       <hr className='w-full'/>
