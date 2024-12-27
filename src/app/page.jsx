@@ -39,7 +39,7 @@ const Home = () => {
       </div>
       <BusinessSection/>
       <StorySuccessSection/>
-      <WorkSection/>
+      <WorkSection name="work"/>
       <BookServiceNowSection/>
     </div>
   )

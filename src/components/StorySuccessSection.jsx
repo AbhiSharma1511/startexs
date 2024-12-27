@@ -10,12 +10,12 @@ const StorySuccessSection = () => {
       </div>
       <div className='flex flex-col sm:flex-row justify-between items-center'>
         <div className=' mx-2 md:mx-10 md:w-[50%] gap-2 flex flex-col' >
-          <p className='mt-10 text-center md:text-start text-sm md:text-lg'>At <span className='font-bold text-blue-500'>Startexs</span>, we are a passionate team of <span className='font-serif text-lg text-teal-400'>innovators, creators, and problem-solvers</span> dedicated to transforming ideas into reality. With a commitment to excellence, we craft unique and tailored solutions that empower businesses and individuals to reach their full potential.
+          <p className='text-center md:text-start text-sm md:text-lg'>At <span className='font-bold text-blue-500'>Startexs</span>, our story is built on a foundation of <span className='font-serif text-lg text-teal-400'>passion, innovation, and an unwavering commitment to your success.</span> What began as a small team of dreamers has grown into a dynamic force dedicated to crafting exceptional digital solutions. Each project we undertake is driven by a shared purpose: to empower businesses like yours to thrive in an ever-changing digital landscape.
           </p>
           <p className='text-center md:text-start text-sm md:text-lg'>
-            <span className='text-xl text-blue-500'>Our</span> approach blends cutting-edge technology with a deep understanding of our clients&apos;s needs, allowing us to deliver results that are not only effective but also meaningful. From the first spark of an idea to the final product, we&apos;re with you every step of the way, ensuring that your vision is brought to life with precision and care.
+            <span className='text-xl text-blue-500'>We</span> believe that every partnership is a shared journey. By blending your vision with our expertise, we create solutions that go beyond functionality—solutions that inspire, engage, and deliver real results. Whether it&apos;s a sleek website, a feature-rich mobile app, or a groundbreaking digital strategy, your success is the driving force behind everything we do.
           </p>
-          <p className='hidden md:block'>
+          <p className='hidden md:block text-lg'>
             Whether you&apos;re a startup or an established enterprise, Startexs is your trusted partner in navigating the complexities of today&apos;s digital world. We take pride in our ability to think outside the box, deliver results on time, and exceed expectations.
             <Link href='/contact-us' className='font-bold text-blue-500'>Join Us</Link> on this journey of innovation and growth-together, we can make your vision a reality.</p>
           <div className='flex justify-center sm:justify-start'>
