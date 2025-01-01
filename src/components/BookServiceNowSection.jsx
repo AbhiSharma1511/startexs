@@ -10,7 +10,7 @@ const BookServiceNowSection = () => {
         <p className='text-[#C7C7C7] break-words w-xl md:max-w-max text-md sm:text-lg md:text-xl lg:text-2xl'>Success is just a step away. Don't let your ideas sit idle—let us help you bring them to life with custom websites and apps that deliver results.</p>
       </div>
       <div className='flex flex-col sm:flex-row justify-between items-center'>
-        <Link href={"/"} className='flex'>
+        <Link href={"/contact-us"} className='flex'>
         <img className='w-36 md:w-auto h-auto' src='/book_service.svg' alt=""/>
         </Link>
       </div>

@@ -1,42 +1,100 @@
-import StartexsLogo from '@/components/StartexsLogo';
+import TextLogoSection from '@/components/TextLogoSection';
 import React from 'react'
 
 const ContactUs = () => {
+
+    const headText = `Let's Bring Your Vision to Life 🖐️`
+    const text = `Ready to grow your business? Fill out the form below, and let&apos;s start a conversation about your goals and needs.`
+
     return (
-        <div className='text-white mt-20 mx-20'>
-            <div className='flex justify-between gap-10 md:gap-20'>
-                <div className='max-w-max mt-10'>
-                    <h2 className='text-4xl'>Let&apos;s Bring Your Vision to Life 🖐️✋</h2>
-                    <p>Ready to grow your business? Fill out the form below, and let&apos;s start a conversation about your goals and needs.</p>
-                </div>
-                <div className='md:mr-64'>
-                    <StartexsLogo />
+        <div className='text-white mt-20 px-0 md:px-20'>
+            <div className='flex justify-between'>
+                <TextLogoSection headText={headText} text={text} />
+            </div>
+            <div className='flex flex-col md:flex-row gap-10 md:items-center mt-10'>
+                <form className="md:w-[50%] flex flex-col gap-8 px-4 py-6 rounded-lg shadow-lg text-white">
+                    {/* Header */}
+                    <h1 className="text-2xl font-bold text-center md:text-start mb-4">Tell us more about your project...</h1>
+
+                    {/* Client Name & Organization */}
+                    <div className="md:flex md:justify-between gap-6">
+                        <div className="flex-1">
+                            <label htmlFor="client-name" className="block text-lg font-semibold mb-2">Client Name:</label>
+                            <input
+                                id="client-name"
+                                type="text"
+                                className="w-full rounded-md px-4 py-2 bg-gray-800 border-2 border-gray-500 focus:outline-none focus:border-blue-500"
+                                placeholder="e.g., John Doe"
+                                required
+                            />
+                        </div>
+                        <div className="flex-1 mt-4 md:mt-0">
+                            <label htmlFor="organization-name" className="block text-lg font-semibold mb-2">Organization Name:</label>
+                            <input
+                                id="organization-name"
+                                type="text"
+                                className="w-full rounded-md px-4 py-2 bg-gray-800 border-2 border-gray-500 focus:outline-none focus:border-blue-500"
+                                placeholder="e.g., Startexs Private Ltd."
+                                required
+                            />
+                        </div>
+                    </div>
+                    {/* Professional Email & Contact No */}
+                    <div className="md:flex md:justify-between gap-6">
+                        <div className="flex-1">
+                            <label htmlFor="client-name" className="block text-lg font-semibold mb-2">Professional Email:</label>
+                            <input
+                                id="email"
+                                type="text"
+                                className="w-full rounded-md px-4 py-2 bg-gray-800 border-2 border-gray-500 focus:outline-none focus:border-blue-500"
+                                placeholder="e.g., John@statexs.com"
+                                required
+                            />
+                        </div>
+                        <div className="flex-1 mt-4 md:mt-0">
+                            <label htmlFor="organization-name" className="block text-lg font-semibold mb-2">Contact No:</label>
+                            <input
+                                id="contact"
+                                type="text"
+                                className="w-full rounded-md px-4 py-2 bg-gray-800 border-2 border-gray-500 focus:outline-none focus:border-blue-500"
+                                placeholder="e.g., 1234567890"
+                                required
+                            />
+                        </div>
+                    </div>
+
+                    {/* Project Brief */}
+                    <div>
+                        <label htmlFor="project-brief" className="block text-lg font-semibold mb-2">Project Brief:</label>
+                        <textarea
+                            id="project-brief"
+                            rows="6"
+                            className="w-full rounded-md px-4 py-2 bg-gray-800 border-2 border-gray-500 focus:outline-none focus:border-blue-500"
+                            placeholder="It's a web project for healthcare."
+                            required
+                        ></textarea>
+                    </div>
+
+                    {/* Action Section */}
+                    <div className="flex flex-col md:flex-row items-center justify-between py-4 px-6 rounded-lg shadow-md">
+                        <button
+                            type="submit"
+                            className="bg-blue-600 text-white font-bold rounded-lg px-6 py-2 transition-transform transform hover:scale-105 hover:bg-blue-700 whitespace-nowrap"
+                        >
+                            Book Service
+                        </button>
+                        <p className="text-center mt-4 md:mt-0">
+                            Or email us directly at{' '}
+                            <a href="mailto:sales@startexs.com" className="text-blue-800 font-semibold underline hover:text-blue-900">
+                                sales@startexs.com
+                            </a>
+                        </p>
+                    </div>
+                </form>
+                <div className='md:w-1/2 mx-4 md:mx-0 mb-4 md:mb-0'>
+                    <img className='rounded-lg' src='/project-discuss.webp' />
                 </div>
             </div>
-            <form className='md:w-[50%] grid gap-10 pr-20 mb-10'>
-                <div className='mt-10 flex justify-between'>
-                    <div className=''>
-                        <h2 className='text-xl'>Client Name:</h2>
-                        <input className='rounded-md text-md px-3 py-1 bg-black border-2 border-gray-400' placeholder='eg..John Doe' required />
-                    </div>
-                    <div>
-                        <h2 className='text-xl'>Organization Name:</h2>
-                        <input className='rounded-md text-md px-3 py-1 bg-black border-2 border-gray-400' placeholder='eg..Startexs Private Ltd.' required />
-                    </div>
-                </div>
-                <div>
-                    <h2 className='text-xl'>Professional Email Id:</h2>
-                    <input className='w-full mr-10 rounded-md text-md px-3 py-1 bg-black border-2 border-gray-400' placeholder='eg..john@startexs.com' required />
-                </div>
-                <div>
-                    <h2 className='text-xl'>Please share the breif about the project:</h2>
-                    <textarea rows={6} cols={56} className='w-full rounded-md text-md px-3 py-1 bg-black border-2 border-gray-400' placeholder='Its a web poject of healthcare.' required />
-                </div>
-                <div className='flex gap-8'>
-                    <button type='submit' className='border-2 border-gray-500 bg-blue-600 rounded-lg px-3 py-1'>Book Service</button>
-                    <h2>or Email us directly at<a href='#' className='text-blue-500'>sales@startexs.com</a></h2>
-                </div>
-            </form>
         </div>
     )
 }
