@@ -24,47 +24,29 @@ const AboutUs = () => {
 
   return (
     <div className='text-white text- md:mx-16 mt-20'>
-      <TextLogoSection headText = {headText} text = {text} />
+      <TextLogoSection headText={headText} text={text} />
       <h2 className='text-4xl font-serif mt-16 text-center md:text-start'>Brains🤯 Behind Startexs...</h2>
       <div className='flex flex-col md:flex-row items-center gap-5 justify-evenly mt-16 text-center'>
-        <div className='border-2 md:border-0 border-gray-400 rounded-lg p-2'>
-          <img className='w-64 h-72 rounded-lg' src='/profile_photo.png' />
-          <h2>Abhinav Sharma</h2>
-          <p>Full Stack Developer</p>
-          <div className='flex gap-3 justify-evenly mt-5'>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className='flex justify-around '>
-              <FontAwesomeIcon icon={faLinkedin} className='w-6 h-6 bg-blue-700 text-black rounded-md' />
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className='flex justify-around '>
-              <FontAwesomeIcon icon={faGithub} className='w-6 h-6 bg-white text-black rounded-md' />
-            </a>
-          </div>
+        <div className='border-2 md:border-0 border-gray-400 rounded-lg p-2 hover:border-slate-400 hover:border-2 hover:scale-110 transition-transform duration-1000 ease-out'>
+          <a target='_blank' href={"https://www.linkedin.com/in/abhinav-sharma-686415224/"}>
+            <img className='w-64 h-72 rounded-lg mb-2' src='/AbhinavPhoto.jfif' />
+            <h2>Abhinav Sharma</h2>
+            <p>Full Stack Developer</p>
+          </a>
         </div>
-        <div className='border-2 md:border-0 border-gray-400 rounded-lg p-2'  >
-          <img className='w-64 h-72 rounded-lg' src='/profile_photo.png' />
-          <h2>Amit Gupta</h2>
-          <p>Frontend Developer</p>
-          <div className='flex gap-3 justify-evenly mt-5'>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className='flex justify-around '>
-              <FontAwesomeIcon icon={faLinkedin} className='w-6 h-6 bg-blue-700 text-black rounded-md' />
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className='flex justify-around '>
-              <FontAwesomeIcon icon={faGithub} className='w-6 h-6 bg-white text-black rounded-md' />
-            </a>
-          </div>
+        <div className='border-2 md:border-0 border-gray-400 rounded-lg p-2 hover:border-slate-400 hover:border-2 hover:scale-110  transition-transform duration-1000 ease-out'>
+          <a target='_blank' href={"https://www.linkedin.com/in/amit-gupta027/"}>
+            <img className='w-64 h-72 rounded-lg mb-2' src='/Amitphoto.png' />
+            <h2>Amit Gupta</h2>
+            <p>Frontend Developer</p>
+          </a>
         </div>
-        <div className='border-2 md:border-0 border-gray-400 rounded-lg p-2' >
-          <img className='w-64 h-72 rounded-lg' src='/profile_photo.png' />
-          <h2>Dewang Singh</h2>
-          <p>UX/UI Designer</p>
-          <div className='flex gap-3 justify-evenly mt-5'>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className='flex justify-around '>
-              <FontAwesomeIcon icon={faLinkedin} className='w-6 h-6 bg-blue-700 text-black rounded-md' />
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className='flex justify-around '>
-              <FontAwesomeIcon icon={faGithub} className='w-6 h-6 bg-white text-black rounded-md' />
-            </a>
-          </div>
+        <div className='border-2 md:border-0 border-gray-400 rounded-lg p-2 hover:border-slate-400 hover:border-2 hover:scale-110  transition-transform duration-1000 ease-out'>
+          <a target='_blank' href={"https://www.linkedin.com/in/singhdewang/"}>
+            <img className='w-64 h-72 rounded-lg mb-2' src='/DevangPhoto.jfif' />
+            <h2>Dewang Singh</h2>
+            <p>UX/UI Designer</p>
+          </a>
         </div>
       </div>
       <BookServiceNowSection />
