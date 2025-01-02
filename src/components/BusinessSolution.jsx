@@ -15,7 +15,7 @@ const BusinessSection = () => {
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.8 }}
           className='flex flex-col items-center text-center border-gray-400 border-2 h-min rounded-xl p-3 bg-gray-400 hover:scale-110 transition-transform duration-1000 ease-out' >
-          <img className='md:h-64 md:w-[350px] rounded-lg' src='/ui_ux_photo.jfif' alt='UI/IX' />
+          <img className='md:h-52 md:w-[300px] rounded-lg' src='/ui_ux_photo.jfif' alt='UI/IX' />
           <h2 className='pt-2 text-xl'>UI/UX Design</h2>
         </motion.div>
         <motion.div
@@ -23,7 +23,7 @@ const BusinessSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.8 }} className='flex flex-col items-center text-center border-gray-400 border-2 h-min rounded-xl p-3 bg-gray-400 hover:scale-110 transition-transform duration-1000 ease-out' >
-          <img className='md:h-64 md:w-[350px] rounded-lg' src='/web_photo.jfif' alt='UI/IX' />
+          <img className='md:h-52 md:w-[300px] rounded-lg' src='/web_photo.jfif' alt='UI/IX' />
           <h2 className='pt-2 text-xl'>Website design and development</h2>
         </motion.div>
         <motion.div
@@ -31,7 +31,7 @@ const BusinessSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.8 }} className='flex flex-col items-center text-center border-gray-400 border-2 h-min rounded-xl p-3 bg-gray-400 hover:scale-110 transition-transform duration-1000 ease-out' >
-          <img className='md:h-64 md:w-[350px] rounded-lg' src='/android_photo.webp' alt='UI/IX' />
+          <img className='md:h-52 md:w-[300px] rounded-lg' src='/android_photo.webp' alt='UI/IX' />
           <h2 className='pt-2 text-xl'>Mobile App design and development</h2>
         </motion.div>
       </div>

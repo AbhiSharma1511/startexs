@@ -14,24 +14,34 @@ const WorkSection = () => {
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.8 }}
           className='flex flex-col items-center text-center border-gray-400 border-2 h-min rounded-xl p-3 bg-gray-400 hover:scale-110 transition-transform duration-500 ease-out' >
-          <img className='md:h-64 md:w-[350px] rounded-lg' src='/ui_ux_photo.jfif' alt='UI/IX' />
-          <h2 className='pt-2 text-xl'>UI/UX Design</h2>
+          <a target='_black' href='https://www.figma.com/proto/zsOXYudLCKSjfshOrbETbM/Adhyatmik-yoga?page-id=2%3A3&type=design&node-id=344-594&viewport=3426%2C-2295%2C0.18&t=daHbQIrhZxhYpXpy-1&scaling=scale-down&starting-point-node-id=253%3A5057'>
+            <img className='md:h-52 md:w-[300px] rounded-lg' src='/ui_ux_photo.jfif' alt='UI/IX' />
+            <h2 className='pt-2 text-xl'>UI/UX Design</h2>
+          </a>
+
+
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: -100 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.8 }} className='flex flex-col items-center text-center border-gray-400 border-2 h-min rounded-xl p-3 bg-gray-400 hover:scale-110 transition-transform duration-500 ease-out' >
-          <img className='md:h-64 md:w-[350px] rounded-lg' src='/web_photo.jfif' alt='UI/IX' />
-          <h2 className='pt-2 text-xl'>Website design and development</h2>
+          <a target='_black' href='https://abhi-ochi-dark.netlify.app/'>
+            <img className='md:h-52 md:w-[300px] rounded-lg' src='/web_photo.jfif' alt='UI/IX' />
+            <h2 className='pt-2 text-xl'>Website design and development</h2>
+          </a>
+
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.8 }} className='flex flex-col items-center text-center border-gray-400 border-2 h-min rounded-xl p-3 bg-gray-400 hover:scale-110 transition-transform duration-500 ease-out' >
-          <img className='md:h-64 md:w-[350px] rounded-lg' src='/android_photo.webp' alt='UI/IX' />
-          <h2 className='pt-2 text-xl'>Mobile App design and development</h2>
+          <a target='_black' href='https://www.figma.com/proto/zsOXYudLCKSjfshOrbETbM/Adhyatmik-yoga?page-id=2%3A3&type=design&node-id=344-594&viewport=3426%2C-2295%2C0.18&t=daHbQIrhZxhYpXpy-1&scaling=scale-down&starting-point-node-id=253%3A5057'>
+            <img className='md:h-52 md:w-[300px] rounded-lg' src='/android_photo.webp' alt='UI/IX' />
+            <h2 className='pt-2 text-xl'>Mobile App design and development</h2>
+          </a>
+
         </motion.div>
       </div>
     </div>

@@ -27,7 +27,7 @@ const AboutUs = () => {
       <TextLogoSection headText={headText} text={text} />
       <h2 className='text-4xl font-serif mt-16 text-center md:text-start'>Brains🤯 Behind Startexs...</h2>
       <div className='flex flex-col md:flex-row items-center gap-5 justify-evenly mt-16 text-center'>
-        <div className='border-2 md:border-0 border-gray-400 rounded-lg p-2 hover:border-slate-400 hover:border-2 hover:scale-110 transition-transform duration-1000 ease-out'>
+        <div className='border-2 md:border-0 border-gray-400 rounded-lg p-2 hover:border-slate-500 hover:border-2 hover:scale-110 transition-transform duration-1000 ease-out'>
           <a target='_blank' href={"https://www.linkedin.com/in/abhinav-sharma-686415224/"}>
             <img className='w-64 h-72 rounded-lg mb-2' src='/AbhinavPhoto.jfif' />
             <h2>Abhinav Sharma</h2>
