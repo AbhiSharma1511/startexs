@@ -1,11 +1,10 @@
-import Link from 'next/link'
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import StartexsLogo from '@/components/StartexsLogo';
 import BookServiceNowSection from '@/components/BookServiceNowSection';
 import TextLogoSection from '@/components/TextLogoSection';
 import Image from 'next/image';
+import AbhinavPhoto from '../../../public/AbhinavPhoto.png'
+import AmitPhoto from '../../../public/AmitPhoto.png'
+import DevangPhoto from '../../../public/DevangPhoto.png'
 
 const AboutUs = () => {
 
@@ -30,21 +29,21 @@ const AboutUs = () => {
       <div className='flex flex-col md:flex-row items-center gap-5 justify-evenly mt-16 text-center'>
         <div className='border-2 md:border-0 border-gray-400 rounded-lg p-2 hover:border-slate-500 hover:border-2 hover:scale-110 transition-transform duration-1000 ease-out'>
           <a target='_blank' href={"https://www.linkedin.com/in/abhinav-sharma-686415224/"}>
-            <Image alt="profile-pic" height="1000" width="1000" className='object-cover w-64 h-72 rounded-lg mb-2' src='/AbhinavPhoto.jfif' />
+            <Image alt="profile-pic" height="1000" width="1000" className='object-cover w-64 h-72 rounded-lg mb-2' src={AbhinavPhoto}/>
             <h2>Abhinav Sharma</h2>
             <p>Full Stack Developer</p>
           </a>
         </div>
         <div className='border-2 md:border-0 border-gray-400 rounded-lg p-2 hover:border-slate-400 hover:border-2 hover:scale-110  transition-transform duration-1000 ease-out'>
           <a target='_blank' href={"https://www.linkedin.com/in/amit-gupta027/"}>
-            <Image alt="profile-pic" height="1000" width="1000" className='object-cover w-64 h-72 rounded-lg mb-2' src='/Amitphoto.png' />
+            <Image alt="profile-pic" height="1000" width="1000" className='object-cover w-64 h-72 rounded-lg mb-2' src={AmitPhoto} />
             <h2>Amit Gupta</h2>
             <p>Frontend Developer</p>
           </a>
         </div>
         <div className='border-2 md:border-0 border-gray-400 rounded-lg p-2 hover:border-slate-400 hover:border-2 hover:scale-110  transition-transform duration-1000 ease-out'>
           <a target='_blank' href={"https://www.linkedin.com/in/singhdewang/"}>
-            <Image alt="profile-pic" height="1000" width="1000" className='object-cover w-64 h-72 rounded-lg mb-2' src='/DevangPhoto.jfif' />
+            <Image alt="profile-pic" height="1000" width="1000" className='object-cover w-64 h-72 rounded-lg mb-2' src={DevangPhoto} />
             <h2>Dewang Singh</h2>
             <p>UX/UI Designer</p>
           </a>
