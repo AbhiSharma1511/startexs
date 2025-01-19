@@ -81,7 +81,7 @@ export async function POST(request) {
         });
     } catch (error) {
         console.error("Error sending email:", error);
-        return new Response(JSON.stringify({ message: "Error sending email." }), {
+        return new Response(JSON.stringify({ message: `Error sending email., ${error}` }), {
             status: 500,
             headers: { 'Content-Type': 'application/json' }
         });
