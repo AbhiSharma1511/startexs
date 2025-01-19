@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <div className='mt-10 md:px-16 md:mt-20 flex items-center justify-center flex-col'>
-      <div className='text-white flex items-center justify-center flex-col gap-y-4 md:gap-y-8 max-w-screen-lg'>
+      <div className='text-white flex items-center justify-center flex-col gap-y-4 md:gap-y-8 max-w-screen-lg overflow-hidden'>
         <div className='w-fit bg-[#4e8d29] rounded-full px-4 py-1.5 text-center flex items-center'>
           <h3 className=''>
             ✅  Your growth, our mission
@@ -22,7 +22,7 @@ const Home = () => {
           initial={{ opacity: 0, x:-100 }}
           animate={{ opacity: 1, x:0 }}
           transition={{ duration: 2, ease: "easeInOut" }}
-          className='text-center text-xl sm:text-3xl md:text-5xl font-bold'>Bring Your
+          className='text-center text-xl sm:text-3xl md:text-5xl font-bold overflow-hidden'>Bring Your
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, scale: 1.25 }}
@@ -32,7 +32,7 @@ const Home = () => {
         initial={{ opacity: 0, x:100 }}
         animate={{ opacity: 1, x:0 }}
         transition={{ duration: 2, ease: "easeInOut" }}
-        className='text-md md:text-lg text-center text-gray-300	'>From sleek websites to powerful mobile apps, we design tools that help your business grow and thrive in the digital age</motion.p>
+        className='text-md md:text-lg text-center text-gray-300'>From sleek websites to powerful mobile apps, we design tools that help your business grow and thrive in the digital age</motion.p>
 
         <motion.div
         initial={{ opacity: 0 }}

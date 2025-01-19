@@ -8,7 +8,7 @@ const BusinessSection = () => {
       <div className='mb-10'>
         <h2 className='text-xl sm:text-2xl md:text-4xl lg:text-5xl font-semibold font-serif'>Solution Build For Your Business 🫡</h2>
       </div>
-      <div className='flex flex-col w-[70%] md:w-full md:flex-row gap-4 md:gap-1  justify-center md:justify-around'>
+      <div className='flex flex-col w-[70%] md:w-full md:flex-row gap-4 md:gap-1  justify-center md:justify-around overflow-hidden'>
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
