@@ -161,8 +161,8 @@ const ContactUs = () => {
                         </button>
                         <p className="text-center mt-4 md:mt-0">
                             Or email us directly at{' '}
-                            <a href="mailto:sales@startexs.com" className="text-blue-800 font-semibold underline hover:text-blue-900">
-                                sales@startexs.com
+                            <a href="mailto:contact@startexs.com" className="text-blue-800 font-semibold underline hover:text-blue-900">
+                                contact@startexs.com
                             </a>
                         </p>
                     </div>

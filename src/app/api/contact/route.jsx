@@ -4,7 +4,13 @@ export async function POST(request) {
     const { clientName, organizationName, email, phNumber, projectBrief } = await request.json();
 
     const transporter = nodemailer.createTransport({
-        service: "gmail",
+        // service: 'gmail',  
+        // host: 'smtp.gmail.com',  
+        // port: 587, 
+        service: 'titan',  
+        host: process.env.SMTP_HOST,  
+        port: process.env.SMTP_PORT, 
+        secure: false,
         auth: {
             user: process.env.ADMIN_EMAIL,
             pass: process.env.ADMIN_PASSWORD,
@@ -44,7 +50,8 @@ export async function POST(request) {
         // Sending email to the admin
         await transporter.sendMail({
             from: process.env.ADMIN_EMAIL,
-            to: `${process.env.ADMIN_EMAIL}, singh.dewang007@gmail.com, amit2010066@akgec.ac.in`,
+            // to: `${process.env.ADMIN_EMAIL}, singh.dewang007@gmail.com, amit2010066@akgec.ac.in`,
+            to: `${process.env.ADMIN_EMAIL}`,
             subject: "New Project Submission",
             text: `Hello Admin,\n\n
                 We have received a new project submission! Here are the details for your review:

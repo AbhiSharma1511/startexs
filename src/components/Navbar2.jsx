@@ -124,7 +124,7 @@ const Navbar2 = () => {
                         Service
                     </Link>
                     <Link href="/contact-us" onClick={() => setIsMenuOpen(false)} className="block mt-10">
-                        <button className="bg-blue-600 rounded-lg px-4 py-2 text-white hover:bg-blue-700 transition w-full">
+                        <button className="bg-[#858FFF] rounded-lg px-4 py-2 text-white hover:bg-blue-700 transition w-full">
                             Contact Us
                         </button>
                     </Link>
