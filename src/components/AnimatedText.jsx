@@ -18,7 +18,7 @@ export default function AnimatedText() {
     };
 
     return (
-        <div className="flex items-center justify-center flex-col mr-0 md:mr-16 mt-20 md:mt-0">
+        <div className="flex items-center justify-center flex-col mr-0 md:mr-16 mt-20 md:mt-0 overflow-hidden">
             {/* Animated Letters */}
             <div className="flex text-5xl md:text-8xl font-semibold border-2 border-[#858FFF] rounded-full p-10  hover:scale-110 transition-transform duration-300">
                 {fullText.split("").map((letter, index) => (
