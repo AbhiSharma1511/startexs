@@ -11,7 +11,7 @@ const StorySuccessSection = () => {
       <div className='mb-2 md:mb-5'>
         <h2 className='text-xl sm:text-2xl md:text-4xl lg:text-5xl font-semibold font-serif'>Our Story, Your Success ✌️</h2>
       </div>
-      <div className='flex flex-col lg:flex-row justify-between items-center'>
+      <div className='flex flex-col lg:flex-row justify-between items-center mt-10'>
         <div className=' mx-8 lg:mx-10 lg:w-[50%] gap-2 flex flex-col' >
           <p className='text-center md:text-start text-sm sm:text-lg md:text-xl'>At <span className='font-bold text-[#858FFF]'>Startexs</span>, our story is built on a foundation of <span className='font-serif text-lg text-teal-400'>passion, innovation, and an unwavering commitment to your success.</span> What began as a small team of dreamers has grown into a dynamic force dedicated to crafting exceptional digital solutions. Each project we undertake is driven by a shared purpose: to empower businesses like yours to thrive in an ever-changing digital landscape.
           </p>

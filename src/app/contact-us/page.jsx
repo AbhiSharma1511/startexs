@@ -128,10 +128,11 @@ const ContactUs = () => {
                                 name="phNumber"
                                 value={formData.phNumber}
                                 onChange={handleChange}
-                                className="w-full rounded-md px-4 py-2 bg-gray-800 border-2 border-gray-500 focus:outline-none focus:border-blue-500"
+                                className="w-full rounded-md px-4 py-2 bg-gray-800 border-2 border-gray-500 focus:outline-none focus:border-blue-500 appearance-none"
                                 placeholder="e.g., 1234567890"
                                 required
                             />
+
                         </div>
                     </div>
 
@@ -161,7 +162,7 @@ const ContactUs = () => {
                         </button>
                         <p className="text-center mt-4 md:mt-0">
                             Or email us directly at{' '}
-                            <a href="mailto:contact@startexs.com" className="text-blue-800 font-semibold underline hover:text-blue-900">
+                            <a href="mailto:contact@startexs.com" className="text-blue-300 font-semibold underline hover:text-blue-400">
                                 contact@startexs.com
                             </a>
                         </p>
@@ -174,6 +175,22 @@ const ContactUs = () => {
                 </form>
                 <div className='md:w-1/2 mx-4 md:mx-0 mb-4 md:mb-0'>
                     <img className='rounded-lg' src='/project-discuss.webp' />
+                </div>
+            </div>
+            <div className='mt-10 px-4 md:px-0'>
+                <h2 className='text-4xl font-semibold'>Frequently Asked Questions...</h2>
+                <div className='mt-14'>
+                    <h2 className='text-2xl bg-pink-500 rounded-full px-3 py-1 w-min'>Projects</h2>
+                    <div className='grid grid-col-1 md:grid-cols-3 gap-10 mt-5 mx-4 md:mx-8 '>
+                        <div className='bg-slate-700 rounded-lg px-5 py-6'>
+                            <h2 className='text-xl'>How long does a typical web design project take at StartExs?</h2>
+                            <p className='text-md mt-4'>Our projects vary in duration based on complexity and client requirements. Typically, a standard website can take anywhere from 4 to 8 weeks, while more intricate sites may take longer. We'll provide a more specific timeline once we understand your needs.</p>
+                        </div>
+                        <div className='bg-slate-700 rounded-lg px-5 py-6'>
+                            <h2 className='text-xl'>Can StarExs handle e-commerce and other specialized websites?</h2>
+                            <p className='text-md mt-4'>Absolutely! We have experience in designing a variety of websites, including e-commerce platforms, portfolios, blogs, and more. Whatever your requirement, we're here to help.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

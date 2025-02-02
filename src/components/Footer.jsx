@@ -54,7 +54,8 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-gradient-to-tr from-[#1E2A47] via-[#23395B] to-[#1E2A47] text-white rounded-t-lg">
+    // <div className="bg-gradient-to-tr from-[#1E2A47] via-[#23395B] to-[#1E2A47] text-white rounded-t-lg">
+    <div className=" text-white rounded-t-lg">
       <div className="flex flex-col sm:flex-row px-8 md:px-20 lg:px-32 py-10 items-center sm:justify-evenly md:gap-20 gap-5">
         {/* Logo and Subscription Section */}
         <div className="flex gap-8 lg:gap-16 flex-col md:flex-row items-center">
@@ -122,7 +123,7 @@ const Footer = () => {
           </div>
           {/* Social Links */}
           <div className="flex flex-col items-center sm:items-start gap-2 text-lg md:text-xl">
-            <Link href="#" className="hover:underline">
+            <Link target="_blank" href="https://www.linkedin.com/company/startexs" className="hover:underline">
               LinkedIn
             </Link>
             <Link href="#" className="hover:underline">

@@ -38,24 +38,22 @@ const Navbar2 = () => {
 
 
     return (
-        <div className="relative">
+        <div className="relative bg-transparent">
             {/* Navbar container */}
-            <div className="flex justify-between items-center bg-black py-4 px-5 md:px-10">
+            <div className="flex justify-between items-center py-4 px-5 md:px-10">
                 {/* Logo Section */}
                 <div
-                    className="p-1 bg-gradient-to-r from-red-500 via-green-700 to-blue-600 animate-rotate-border bg-[length:200%_200%] rounded-md">
-                    <div className="bg-black text-center rounded-md px-1">
-                        <Link href={'/'}>
-                            <img className="w-24 md:w-32" src='/startexs_logo.svg' alt='logo' />
-                        </Link>
-                    </div>
+                    className="p-1 rounded-md">
+                    <Link href={'/'}>
+                        <img className="w-24 md:w-32" src='/startexs_logo.svg' alt='logo' />
+                    </Link>
                 </div>
 
                 {/* Desktop Links */}
                 <div className="hidden md:flex px-3 py-1 text-white">
                     <Link href="/" className="mx-5 hover:text-blue-400 transition">Home</Link>
                     <Link href="/about-us" className="mx-5 hover:text-blue-400 transition">About Us</Link>
-                    <Link href="/#work" className="mx-5 hover:text-blue-400 transition">Work</Link>
+                    <Link href="/works" className="mx-5 hover:text-blue-400 transition">Work</Link>
                     <Link href="/#service" className="mx-5 hover:text-blue-400 transition">Service</Link>
                 </div>
 
@@ -115,7 +113,7 @@ const Navbar2 = () => {
                         <FaInfoCircle className="mr-3 text-blue-400 md:hidden" />
                         About Us
                     </Link>
-                    <Link href="/#work" className="flex items-center px-5 py-3 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
+                    <Link href="/works" className="flex items-center px-5 py-3 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
                         <FaBriefcase className="mr-3 text-blue-400 md:hidden" />
                         Work
                     </Link>
