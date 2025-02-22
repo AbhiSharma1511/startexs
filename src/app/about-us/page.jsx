@@ -110,24 +110,27 @@ const AboutUs = () => {
         <p className='text-lg'>Don't just take our word for it - see what actual users of our service have to say about their experience.</p>
       </div>
       <div className='grid  grid-col-1 md:grid-cols-3  gap-10 md:gap-20 px-8 justify-around'>
-        <div className='w-[300] h-[300] lg:p-10 bg-gradient-to-br from-[#FFE090] to-[#FFCF4D] rounded-xl flex flex-col items-center p-20'>
-          <div className="h-[200px] w-[200px] bg-cover bg-center" style={{ backgroundImage: "url('https://s3-alpha-sig.figma.com/img/7d51/7a53/f79fdd8757dd56be0742819613653d8c?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gwAInavl8XPDefprKJXRkpo2T-YsVs5tg7L678d5VAeU8DaS6p25UeiP7dRTzH~XeucYdgzr0me61nT1lhomEiwnNd1KcG3fN7nL-HcRqtakj1RPfjzcUj8LjkjLx5nnbmnTA4-UIQ21tsJamAM4fuevMiOGJMP7tL4PqFHYGlRyDkvmuToC-h5dfBVGbOMlJLbL6eFn6s9HOmvJnNloJ8S3rKYgrPghhAqd6mgql-VKXh4nYIgm5EsXf-bqefhQZiMJ9xzSO7oBli4HAyJmvjseJpMbbF5ecRFGwSKZasUd3TnYUKPMlG2f~BRWaSfIGDATT9lEZPP2i6Bg-xzD2A__')" }}></div>
-
+        <div className='w-[300] h-[300] lg:p-10 bg-gradient-to-br from-[#E0DBC4] to-[#FFCF4D] rounded-xl flex flex-col items-center p-20'>
+          <div className="h-[200px] w-[200px] bg-cover bg-center rounded-full mt-2 sm:mt-4 md:mt-10">
+          <Image src={"/gif/giphy.gif"} height={100} width={100} className='w-full h-full object-fit rounded-full' alt=''></Image></div>
           <div className='text-center text-black mt-16'>
-            <h1 className='text-5xl font-bold'>500+</h1>
+            <h1 className='text-5xl font-bold'>100+</h1>
             <h2 className='text-3xl'>Projects Delivered <br/> Successfully</h2>
           </div>
 
         </div>
         <div className='w-[300] h-[300] p-20 bg-gradient-to-br from-[#FFD78A] to-[#FF665D] rounded-xl flex flex-col items-center'>
-          <div className="h-[200px] w-[200px] bg-cover bg-center" style={{ backgroundImage: "url('https://s3-alpha-sig.figma.com/img/658a/0e7d/a93a4e9226ce269856063616d093d7a7?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TphotN6hRHzdDsEIFmeQ-nor9viNT2hSFd4l3MP9iI9GE68aMmaR-rw1VH5Fath9uMoR6rkWvEzlQp6dfO-vRQJvY~ssu4eJgvmDPFFtH2TV8uUWLVEKyYBFWiv58qFlfDs2Y6Pe97i0pYqjc6Vv5QBq-nAgGKsPxu5td~TL6b0-H4Gc6tjbUb1mG3QmAvHOIKiss-Zi-dX4F9GoXvcls66bfpJcDL~9aX0ib1xl~3Lr~OmTAQoiGO8KXev4uLIzleTEJNJ93FSlV7MeEHvxO6UdYnSVuYel2grBTUwK~JeGt10~Jfb5TPtVOfk09xQluJ7SiVHmss3N1a8pV-UpPA__')" }}></div>
+          <div className="h-[200px] w-[200px] bg-cover bg-center rounded-full">
+          <Image src={"/gif/giphy2.gif"} height={100} width={100} className='w-full h-full object-fit rounded-full' alt=''></Image></div>
           <div className='text-center text-black mt-16'>
-            <h1 className='text-5xl font-bold'>300+</h1>
+            <h1 className='text-5xl font-bold'>89+</h1>
             <h2 className='text-3xl'>Satisfied Clients</h2>
           </div>
         </div>
         <div className='w-[300] h-[300] p-20 bg-gradient-to-br from-[#D9E9FF] to-[#C6DDFF] rounded-xl flex flex-col items-center'>
-          <div className="h-[200px] w-[200px] bg-cover bg-center" style={{ backgroundImage: "url('https://s3-alpha-sig.figma.com/img/93c5/fbe8/d4196c02e3c8e6578f3620920f1d5a8f?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Hxh~AKafC7Pw50uB8TIAsd2c2x9-scpuMA7Mz9g9mY4ZeO2rUDUMeieVW-rWAENWgrNCxVQn-BNTIy0BB3qH39EtwU3v7fwfkhvEQeqYw0iP34S~~-nZJIIIpkzFdlwNYif2d3EiDKHLBH-4cREVpt10NpPWhPV8VE1X3gK1LCXWvkZpiZT~e1891U~TJDeYiAPI~cLq5HodaA5PArmfFTnilYceydm4n6u8GfL3McjbccuAEpL-CvogZbnQuvI4pUvrKsNbeZwzdWuSCtPatH7IIr7TbXolF~gUbbr4zRm2WaYyLnuhEulBMg051QJvpdyLukaG4excpy5S-AugXw__')" }}></div>
+          <div className="h-[200px] w-[200px] bg-fit bg-center rounded-full">
+          <Image src={"/gif/giphy3.gif"} height={100} width={100} className='w-full h-full object-center rounded-full ' alt=''></Image>
+          </div>
           <div className='text-center text-black mt-16'>
             <h1 className='text-5xl font-bold'>85%</h1>
             <h2 className='text-3xl'>Repeat Clients</h2>

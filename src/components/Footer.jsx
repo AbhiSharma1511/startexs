@@ -105,19 +105,19 @@ const Footer = () => {
         <div className="mt-10 sm:mt-0 flex flex-row gap-8 sm:gap-16">
           {/* Page Links */}
           <div className="flex flex-col items-center sm:items-start gap-2 text-lg md:text-xl">
-            <Link href="#" className="hover:underline">
+            <Link href="/" className="hover:underline">
               Home
             </Link>
-            <Link href="#" className="hover:underline">
+            <Link href="/about-us" className="hover:underline">
               About Us
             </Link>
-            <Link href="#" className="hover:underline">
+            <Link href="/contact-us" className="hover:underline">
               Contact Us
             </Link>
-            <Link href="#" className="hover:underline">
+            <Link href="/#service" className="hover:underline">
               Services
             </Link>
-            <Link href="#" className="hover:underline">
+            <Link href="/#work" className="hover:underline">
               Work
             </Link>
           </div>
@@ -126,12 +126,12 @@ const Footer = () => {
             <Link target="_blank" href="https://www.linkedin.com/company/startexs" className="hover:underline">
               LinkedIn
             </Link>
-            <Link href="#" className="hover:underline">
+            <h2 className="hover:underline">
               X
-            </Link>
-            <Link href="#" className="hover:underline">
+            </h2>
+            <h2  className="hover:underline">
               Instagram
-            </Link>
+            </h2>
           </div>
         </div>
       </div>
@@ -140,12 +140,12 @@ const Footer = () => {
       <hr className="border-gray-600 mb-4" />
       <div className="flex flex-col sm:flex-row justify-between items-center px-8 md:px-20 lg:px-32 pb-4 text-sm md:text-base">
         <div className="flex flex-wrap gap-4">
-          <Link href="#" className="hover:underline">
+          <h2  className="hover:underline">
             Privacy Policy
-          </Link>
-          <Link href="#" className="hover:underline">
+          </h2>
+          <h2  className="hover:underline">
             Terms of Service
-          </Link>
+          </h2>
         </div>
         <p className="mt-4 sm:mt-0 text-center">© Startexs 2024. All rights reserved.</p>
       </div>
