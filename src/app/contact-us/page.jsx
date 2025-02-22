@@ -163,7 +163,7 @@ const ContactUs = () => {
                         <p className="text-center mt-4 md:mt-0">
                             Or email us directly at{' '}
                             <a href="mailto:contact@startexs.com" className="text-blue-300 font-semibold underline hover:text-blue-400">
-                                contact@startexs.com
+                                contact@startexs.in
                             </a>
                         </p>
                     </div>
