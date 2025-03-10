@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import "../app/globals.css";
 import Link from 'next/link';
 import { FaHome, FaInfoCircle, FaBriefcase, FaServicestack } from 'react-icons/fa';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar2 = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,24 +51,28 @@ const Navbar2 = () => {
                 </div>
 
                 {/* Desktop Links */}
-                <div className="hidden md:flex px-3 py-1 text-white">
-                    <Link href="/" className="mx-5 hover:text-blue-400 transition">Home</Link>
-                    <Link href="/about-us" className="mx-5 hover:text-blue-400 transition">About Us</Link>
-                    <Link href="/works" className="mx-5 hover:text-blue-400 transition">Work</Link>
-                    <Link href="/#service" className="mx-5 hover:text-blue-400 transition">Service</Link>
+                <div className="hidden md:flex px-3 py-1 text-black dark:text-white">
+                    <Link href="/" className="mx-5 hover:text-blue-400 transition text-lg">Home</Link>
+                    <Link href="/about-us" className="mx-5 hover:text-blue-400 transition text-lg">About Us</Link>
+                    <Link href="/works" className="mx-5 hover:text-blue-400 transition text-lg">Work</Link>
+                    <Link href="/#service" className="mx-5 hover:text-blue-400 transition text-lg">Services</Link>
                 </div>
 
                 {/* Contact Us Button */}
-                <div className="hidden md:block">
+
+                <div className="hidden md:flex gap-5">
+                    <div className='mr-2'>
+                        <ThemeToggle />
+                    </div>
                     <Link href="/contact-us">
-                        <button className="bg-blue-600 rounded-lg px-4 py-2 text-white hover:bg-blue-700 transition">
+                        <button className="bg-[#9873FF] rounded-lg px-4 py-2 text-white hover:bg-blue-700 transition">
                             Contact Us
                         </button>
                     </Link>
                 </div>
 
                 {/* Mobile Hamburger Icon */}
-                <div className="md:hidden text-white">
+                <div className={`md:hidden text-black dark:text-white ${isMenuOpen ? "hidden" : "block"}`}>
                     <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="focus:outline-none">
                         {isMenuOpen ? (
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -119,7 +124,7 @@ const Navbar2 = () => {
                     </Link>
                     <Link href="/#service" className="flex items-center px-5 py-3 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
                         <FaServicestack className="mr-3 text-blue-400 md:hidden" />
-                        Service
+                        Services
                     </Link>
                     <Link href="/contact-us" onClick={() => setIsMenuOpen(false)} className="block mt-10">
                         <button className="bg-[#858FFF] rounded-lg px-4 py-2 text-white hover:bg-blue-700 transition w-full">

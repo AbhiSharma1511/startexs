@@ -36,7 +36,7 @@ const WorkSection = () => {
             >
               <Image src="/text-icon.svg" alt="icon" height={50} width={50} />
             </motion.span>
-            &nbsp;Our Work
+            &nbsp;<span className='text-white'>Our Work</span>
           </span>
           Speaks for Itself 🧑‍💻</h2>
       </div>
@@ -50,16 +50,17 @@ const WorkSection = () => {
               viewport={{ once: true, amount: 0.4 }}
               transition={{ opacity: { duration: 1.5 }, scale: { duration: 1 } }}
               whileHover={{ scale: 0.97, transition: { duration: 0.5 } }}
-              className='relative flex flex-col items-center text-start border-gray-400 border-2 rounded-xl bg-black p-4 w-full transition-shadow duration-500 hover:shadow-[0px_0px_25px_5px_rgba(152,115,255,0.6)] overflow-hidden'
+              className='relative flex flex-col items-center text-start border-gray-300 border-2 rounded-xl bg-white dark:bg-black p-4 w-full transition-shadow duration-500 hover:shadow-[0px_0px_25px_5px_rgba(152,115,255,0.6)] overflow-hidden'
             >
-              <img className='rounded-xl object-contain h-[300px] md:h-[400px]' src={project.imgSrc} alt={project.title} />
+              <img className='rounded-xl object-cover h-[200px] md:h-[300px] ' src={project.imgSrc} alt={project.title} />
               {/* <div className='absolute top-5 right-5'>
-                <p className={`${project.badgeColor} px-2 rounded-full text-sm`}>{project.badge}</p>
+                <p className={`${project.badgeColor} px-2 ounded-full text-sm`}>{project.badge}</p>
               </div> */}
-              <div className='absolute bottom-0 left-0 px-6 py-4 transition-opacity duration-500 lg:opacity-50 hover:opacity-100 lg:bg-opacity-0  lg:hover:bg-black/70 bg-black/80 w-full
-              '>
-                <h2 className='text-2xl w-full text-center md:text-start font-semibold text-white'>{project.title}</h2>
-                <p className='hidden md:block pt-2 text-md text-start text-gray-100'>{project.description}</p>
+              {/* <div className='dark:absolute bottom-0 left-0 px-6 py-4 transition-opacity duration-500 dark:lg:opacity-50 hover:opacity-100 lg:bg-opacity-0  dark:lg:hover:bg-black/70  dark:bg-black/80 w-full
+              '> */}
+              <div className='mt-5'>
+                <h2 className='text-2xl w-full text-center md:text-start font-semibold text-black dark:text-white'>{project.title}</h2>
+                <p className='hidden md:block pt-2 text-md text-start text-black dark:text-gray-100'>{project.description}</p>
               </div>
             </motion.div>
           ))}
@@ -70,7 +71,7 @@ const WorkSection = () => {
           Expolre More Work
         </Link>
         <div className='flex mt-10 w-full justify-center'><HiArrowDown /></div>
-        </div>
+      </div>
     </div>
   )
 }

@@ -34,7 +34,7 @@ const WorkPage = () => {
     return (
         <div className='px-8 md:px-20 mt-10'>
             {/* Grid with 2 columns for large screens, 1 column for small screens */}
-            <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-20'>
+            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-20'>
                 {apps.map((project, index) => (
                     <motion.div
                         key={index}
@@ -42,15 +42,15 @@ const WorkPage = () => {
                         animate={{opacity:1, scale:1}}
                         transition={{ opacity: { duration: 1.5 }, scale: { duration: 1 } }}
                         whileHover={{ scale: 0.97, transition: { duration: 0.5 } }}
-                        className='flex flex-col border-gray-400 border-2 rounded-xl p-3 bg-black px-4 md:px-10 justify-between transition-shadow duration-500 hover:shadow-[0px_0px_20px_5px_rgba(255,0,150,0.6)]'
+                        className='flex flex-col border-gray-400 border-2 rounded-xl p-3 bg-white dark:bg-black px-4 md:px-10  transition-shadow duration-500 hover:shadow-[0px_0px_20px_5px_rgba(255,0,150,0.6)]'
                     >
                         <div className='flex justify-center h-80 p-10'>
-                            <img className='rounded-lg w-[100%] object-contain' src={project.imgSrc} alt='UI/UX'/>
+                            <img className='rounded-xl  w-[100%] object-fit' src={project.imgSrc} alt='UI/UX'/>
                         </div>
                         <a target='_blank' href={project.link} className='mt-4 mb-4'>
                             <div>
                                 <h2 className='text-xl w-full text-start'>{project.title}</h2>
-                                <p className='pt-2 text-sm text-start text-gray-300'>
+                                <p className='pt-2 text-sm text-start text-gray-700 dark:text-gray-300'>
                                     {project.description}
                                 </p>
                             </div>

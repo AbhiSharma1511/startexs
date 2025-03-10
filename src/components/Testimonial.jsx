@@ -28,12 +28,12 @@ const Testimonial = () => {
     ];
 
     return (
-        <div className="w-full pt-10 text-white">
+        <div className="w-full pt-10 text-black dark:text-white">
             <div className="p-6">
                 <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center mb-4 ">
                     Testimonials
                 </h1>
-                <p className="text-center text-white mb-8">
+                <p className="text-center dark:text-white mb-8">
                     Hear what our happy customers have to say about us.
                 </p>
                 {/* <div className="overflow-hidden relative w-full">
@@ -93,7 +93,7 @@ const Testimonial = () => {
                         {[...testimonials, ...testimonials].map((testimonial, index) => (
                             <div
                                 key={index}
-                                className="flex-none w-80 bg-black shadow-lg rounded-xl p-6"
+                                className="flex-none w-80 border-2 border-gray-200  dark:shadow-lg rounded-2xl p-6"
                             >
                                 <div className="flex flex-col justify-between h-full">
                                     <p className="mb-4">{testimonial.review}</p>
@@ -114,7 +114,7 @@ const Testimonial = () => {
                                             />
                                             <div className="flex flex-col items-center justify-center">
                                                 <h3 className="font-bold text-lg">{testimonial.name}</h3>
-                                                <p className="text-gray-400 text-sm">{testimonial.designation}</p>
+                                                <p className=" text-sm">{testimonial.designation}</p>
                                             </div>
                                         </div>
                                     </div>

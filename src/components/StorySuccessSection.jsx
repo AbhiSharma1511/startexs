@@ -22,8 +22,8 @@ const StorySuccessSection = () => {
             Whether you&apos;re a startup or an established enterprise, Startexs is your trusted partner in navigating the complexities of today&apos;s digital world. We take pride in our ability to think outside the box, deliver results on time, and exceed expectations.
             <Link href='/contact-us' className='font-bold text-[#858FFF]'>Join Us</Link> on this journey of innovation and growth-together, we can make your vision a reality.</p>
           <div className='flex justify-center sm:justify-start'>
-            <div className='flex border-2 border-gray-400 px-4 py-1 rounded-xl gap-2 max-w-max mt-4 bg-blue-400 bg-opacity-55'>
-              <Link href={"/"} className=''>Read More</Link>
+            <div className='flex border-2 border-gray-400 px-4 py-1 rounded-xl gap-2 max-w-max mt-4 bg-[#9873FF] dark:bg-blue-400 dark:bg-opacity-55'>
+              <Link href={"/about-us"} className=''>Read More</Link>
               <img className='w-5 ' src='arrow.svg' alt='' />
             </div>
           </div>

@@ -33,7 +33,7 @@ const AboutUs = () => {
   const [isHover3, setIsHover3] = useState(false)
 
   return (
-    <div className='text-white text- md:mx-16 mt-20'>
+    <div className='dark:text-white text-black dar:text-white text- md:mx-16 mt-20'>
       <TextLogoSection headText={headText} text={text} />
       <h2 className='text-4xl font-serif mt-16 text-center md:text-start'>Brains🤯 Behind Startexs...</h2>
       <div className=' flex flex-col md:flex-row items-center gap-5 justify-evenly mt-16 text-center '>
@@ -106,13 +106,13 @@ const AboutUs = () => {
         </div>
       </div>
       <div className='mt-20 w-full text-center mb-10 '>
-        <h2 className=' text-3xl md:text-5xl font-semibold'>Trusted by Many, Proven by Results</h2>
+        <h2 className=' text-3xl md:text-5xl font-semibold font-serif'>Trusted by Many, Proven by Results</h2>
         <p className='text-lg'>Don't just take our word for it - see what actual users of our service have to say about their experience.</p>
       </div>
       <div className='grid  grid-col-1 md:grid-cols-3  gap-10 md:gap-20 px-8 justify-around'>
         <div className='w-[300] h-[300] lg:p-10 bg-gradient-to-br from-[#E0DBC4] to-[#FFCF4D] rounded-xl flex flex-col items-center p-20'>
           <div className="h-[200px] w-[200px] bg-cover bg-center rounded-full mt-2 sm:mt-4 md:mt-10">
-          <Image src={"/gif/giphy.gif"} height={100} width={100} className='w-full h-full object-fit rounded-full' alt=''></Image></div>
+          <Image src={"/gif/giphy.gif"} height={100} width={100} unoptimized className='w-full h-full object-fit rounded-full' alt=''></Image></div>
           <div className='text-center text-black mt-16'>
             <h1 className='text-5xl font-bold'>100+</h1>
             <h2 className='text-3xl'>Projects Delivered <br/> Successfully</h2>
@@ -121,7 +121,7 @@ const AboutUs = () => {
         </div>
         <div className='w-[300] h-[300] p-20 bg-gradient-to-br from-[#FFD78A] to-[#FF665D] rounded-xl flex flex-col items-center'>
           <div className="h-[200px] w-[200px] bg-cover bg-center rounded-full">
-          <Image src={"/gif/giphy2.gif"} height={100} width={100} className='w-full h-full object-fit rounded-full' alt=''></Image></div>
+          <Image src={"/gif/giphy2.gif"} height={100} width={100} unoptimized className='w-full h-full object-fit rounded-full' alt=''></Image></div>
           <div className='text-center text-black mt-16'>
             <h1 className='text-5xl font-bold'>89+</h1>
             <h2 className='text-3xl'>Satisfied Clients</h2>
@@ -129,7 +129,7 @@ const AboutUs = () => {
         </div>
         <div className='w-[300] h-[300] p-20 bg-gradient-to-br from-[#D9E9FF] to-[#C6DDFF] rounded-xl flex flex-col items-center'>
           <div className="h-[200px] w-[200px] bg-fit bg-center rounded-full">
-          <Image src={"/gif/giphy3.gif"} height={100} width={100} className='w-full h-full object-center rounded-full ' alt=''></Image>
+          <Image src={"/gif/giphy3.gif"} height={100} width={100} unoptimized className='w-full h-full object-center rounded-full ' alt=''></Image>
           </div>
           <div className='text-center text-black mt-16'>
             <h1 className='text-5xl font-bold'>85%</h1>

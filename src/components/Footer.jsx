@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import "../app/globals.css";
 import Link from "next/link";
+import { AiFillLinkedin } from "react-icons/ai";
 
 const Footer = () => {
 
@@ -55,7 +56,7 @@ const Footer = () => {
 
   return (
     // <div className="bg-gradient-to-tr from-[#1E2A47] via-[#23395B] to-[#1E2A47] text-white rounded-t-lg">
-    <div className=" text-white rounded-t-lg">
+    <div className=" text-black dark:bg-transparent dark:text-white rounded-t-lg">
       <div className="flex flex-col sm:flex-row px-8 md:px-20 lg:px-32 py-10 items-center sm:justify-evenly md:gap-20 gap-5">
         {/* Logo and Subscription Section */}
         <div className="flex gap-8 lg:gap-16 flex-col md:flex-row items-center">
@@ -124,20 +125,20 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex flex-col items-center sm:items-start gap-2 text-lg md:text-xl">
             <Link target="_blank" href="https://www.linkedin.com/company/startexs" className="hover:underline">
-              LinkedIn
+              <AiFillLinkedin className='w-10 h-10 bg-blue-500  hover:bg-blue-600 rounded-md  fill-white ' />
             </Link>
-            <h2 className="hover:underline">
+            {/* <h2 className="hover:underline">
               X
             </h2>
             <h2  className="hover:underline">
               Instagram
-            </h2>
+            </h2> */}
           </div>
         </div>
       </div>
 
       {/* Footer Bottom */}
-      <hr className="border-gray-600 mb-4" />
+      <hr className="border-gray-300 mb-4" />
       <div className="flex flex-col sm:flex-row justify-between items-center px-8 md:px-20 lg:px-32 pb-4 text-sm md:text-base">
         <div className="flex flex-wrap gap-4">
           <h2  className="hover:underline">

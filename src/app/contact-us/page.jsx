@@ -4,7 +4,6 @@ import TextLogoSection from '@/components/TextLogoSection';
 
 
 const ContactUs = () => {
-
     const headText = `Let's Bring Your Vision to Life 🖐️`
     const text = `Ready to grow your business? Fill out the form below, and let&apos;s start a conversation about your goals and needs.`
 
@@ -67,14 +66,14 @@ const ContactUs = () => {
     };
 
     return (
-        <div className='text-white mt-20 px-0 md:px-20'>
+        <div className='text-black dark:text-white mt-20 px-0 md:px-20'>
             <div className='flex justify-between'>
                 <TextLogoSection headText={headText} text={text} />
             </div>
             <div className='flex flex-col md:flex-row gap-10 md:items-center mt-10'>
-                <form onSubmit={handleSubmit} className="md:w-[50%] flex flex-col gap-8 px-4 py-6 rounded-lg shadow-lg text-white">
+                <form onSubmit={handleSubmit} className="md:w-[50%] flex flex-col gap-8 px-4 py-6 rounded-lg shadow-lg text-black dark:text-white">
                     {/* Header */}
-                    <h1 className="text-2xl font-bold text-center md:text-start mb-4">Tell us more about your project...</h1>
+                    <h1 className="text-2xl font-bold font-serif text-center md:text-start mb-4">Tell us more about your project...</h1>
 
                     {/* Client Name & Organization */}
                     <div className="md:flex md:justify-between gap-6">
@@ -86,7 +85,7 @@ const ContactUs = () => {
                                 name="clientName"
                                 value={formData.clientName}
                                 onChange={handleChange}
-                                className="w-full rounded-md px-4 py-2 bg-gray-800 border-2 border-gray-500 focus:outline-none focus:border-blue-500"
+                                className="w-full rounded-md px-4 py-2 dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-500 focus:outline-none focus:border-blue-500"
                                 placeholder="e.g., John Doe"
                                 required
                             />
@@ -99,7 +98,7 @@ const ContactUs = () => {
                                 name="organizationName"
                                 value={formData.organizationName}
                                 onChange={handleChange}
-                                className="w-full rounded-md px-4 py-2 bg-gray-800 border-2 border-gray-500 focus:outline-none focus:border-blue-500"
+                                className="w-full rounded-md px-4 py-2 dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-500 focus:outline-none focus:border-blue-500"
                                 placeholder="e.g., Startexs Private Ltd."
                                 required
                             />
@@ -115,7 +114,7 @@ const ContactUs = () => {
                                 name="email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                className="w-full rounded-md px-4 py-2 bg-gray-800 border-2 border-gray-500 focus:outline-none focus:border-blue-500"
+                                className="w-full rounded-md px-4 py-2 dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-500 focus:outline-none focus:border-blue-500"
                                 placeholder="e.g., John@statexs.com"
                                 required
                             />
@@ -128,7 +127,8 @@ const ContactUs = () => {
                                 name="phNumber"
                                 value={formData.phNumber}
                                 onChange={handleChange}
-                                className="w-full rounded-md px-4 py-2 bg-gray-800 border-2 border-gray-500 focus:outline-none focus:border-blue-500 appearance-none"
+                                
+                                className="w-full rounded-md px-4 py-2 dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-500 focus:outline-none focus:border-blue-500 appearance-none"
                                 placeholder="e.g., 1234567890"
                                 required
                             />
@@ -145,14 +145,14 @@ const ContactUs = () => {
                             value={formData.projectBrief}
                             onChange={handleChange}
                             rows="6"
-                            className="w-full rounded-md px-4 py-2 bg-gray-800 border-2 border-gray-500 focus:outline-none focus:border-blue-500"
+                            className="w-full rounded-md px-4 py-2 dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-500 focus:outline-none focus:border-blue-500"
                             placeholder="It's a web project for healthcare."
                             required
                         ></textarea>
                     </div>
 
                     {/* Action Section */}
-                    <div className="flex flex-col md:flex-row items-center justify-between py-4 px-6 rounded-lg shadow-md">
+                    <div className="flex flex-col md:flex-row items-center justify-between py-4 px-6 rounded-lg ">
                         <button
                             type="submit"
                             className="bg-blue-600 text-white font-bold rounded-lg px-6 py-2 transition-transform transform hover:scale-105 hover:bg-blue-700 whitespace-nowrap"
@@ -162,7 +162,7 @@ const ContactUs = () => {
                         </button>
                         <p className="text-center mt-4 md:mt-0">
                             Or email us directly at{' '}
-                            <a href="mailto:contact@startexs.in" className="text-blue-300 font-semibold underline hover:text-blue-400">
+                            <a href="mailto:contact@startexs.in" className="text-blue-500 font-semibold underline hover:text-blue-600">
                                 contact@startexs.in
                             </a>
                         </p>
@@ -177,18 +177,18 @@ const ContactUs = () => {
                     <img className='rounded-lg' src='/project-discuss.webp' />
                 </div>
             </div>
-            <div className='mt-10 px-4 md:px-0'>
-                <h2 className='text-4xl font-semibold'>Frequently Asked Questions...</h2>
+            <div className='mt-10 px-4 md:px-0 mb-5'>
+                <h2 className='text-4xl font-semibold font-serif'>Frequently Asked Questions...</h2>
                 <div className='mt-14'>
-                    <h2 className='text-2xl bg-pink-500 rounded-full px-3 py-1 w-min'>Projects</h2>
+                    <h2 className='text-2xl border-2 border-blue-400 rounded-full px-3 py-1 w-min'>Projects</h2>
                     <div className='grid grid-col-1 md:grid-cols-3 gap-10 mt-5 mx-4 md:mx-8 '>
-                        <div className='bg-slate-700 rounded-lg px-5 py-6'>
+                        <div className='border-2 border-gray-300  rounded-lg px-5 py-6'>
                             <h2 className='text-xl'>How long does a typical web design project take at StartExs?</h2>
-                            <p className='text-md mt-4'>Our projects vary in duration based on complexity and client requirements. Typically, a standard website can take anywhere from 4 to 8 weeks, while more intricate sites may take longer. We'll provide a more specific timeline once we understand your needs.</p>
+                            <p className='text-md mt-4 text-gray-70 dark:text-white'>Our projects vary in duration based on complexity and client requirements. Typically, a standard website can take anywhere from 4 to 8 weeks, while more intricate sites may take longer. We'll provide a more specific timeline once we understand your needs.</p>
                         </div>
-                        <div className='bg-slate-700 rounded-lg px-5 py-6'>
+                        <div className='border-2 border-gray-300  rounded-lg px-5 py-6'>
                             <h2 className='text-xl'>Can StarExs handle e-commerce and other specialized websites?</h2>
-                            <p className='text-md mt-4'>Absolutely! We have experience in designing a variety of websites, including e-commerce platforms, portfolios, blogs, and more. Whatever your requirement, we're here to help.</p>
+                            <p className='text-md mt-4 text-gray-700 dark:text-white'>Absolutely! We have experience in designing a variety of websites, including e-commerce platforms, portfolios, blogs, and more. Whatever your requirement, we're here to help.</p>
                         </div>
                     </div>
                 </div>
