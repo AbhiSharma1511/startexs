@@ -72,7 +72,10 @@ const Navbar2 = () => {
                 </div>
 
                 {/* Mobile Hamburger Icon */}
-                <div className={`md:hidden text-black dark:text-white ${isMenuOpen ? "hidden" : "block"}`}>
+                <div className={`md:hidden flex text-black dark:text-white ${isMenuOpen ? "hidden" : "block"}`}>
+                    <div className='mr-3'>
+                        <ThemeToggle />
+                    </div>
                     <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="focus:outline-none">
                         {isMenuOpen ? (
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
