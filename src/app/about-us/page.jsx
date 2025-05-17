@@ -35,8 +35,8 @@ const AboutUs = () => {
   return (
     <div className='dark:text-white text-black dar:text-white text- md:mx-16 mt-20'>
       <TextLogoSection headText={headText} text={text} />
-      <h2 className='text-4xl font-serif mt-16 text-center md:text-start'>Brains🤯 Behind Startexs...</h2>
-      <div className=' flex flex-col md:flex-row items-center gap-5 justify-evenly mt-16 text-center '>
+      {/* <h2 className='text-4xl font-serif mt-16 text-center md:text-start'>Brains🤯 Behind Startexs...</h2> */}
+      {/* <div className=' flex flex-col md:flex-row items-center gap-5 justify-evenly mt-16 text-center '>
         <div
           className='relative border-2 md:border-0 border-gray-400 rounded-lg m-2 overflow-hidden flex justify-center items-center'
           onMouseEnter={() => setIsHover1(true)}
@@ -104,7 +104,7 @@ const AboutUs = () => {
           </motion.div>
           <Image alt="profile-pic" height="500" width="300" className='object-cover rounded-xl' src={DevangPhoto} />
         </div>
-      </div>
+      </div> */}
       <div className='mt-20 w-full text-center mb-10 '>
         <h2 className=' text-3xl md:text-5xl font-semibold font-serif'>Trusted by Many, Proven by Results</h2>
         <p className='text-lg'>Don't just take our word for it - see what actual users of our service have to say about their experience.</p>
